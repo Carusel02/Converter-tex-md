@@ -2,20 +2,23 @@
 #include <stdio.h>
 FILE *out;
 int tabs = 0;
+int level = 0;
 %}
 
 %s QUOTATION
 %s ITEMIZE
-
+%s ENUMERATE
 
 %%
-[\t] {}
+[\t] {};
 \\documentclass.*\{.*\} ;
 \\newcommand\{.*\}\{.*\} ;
 \\usepackage\{.*\} ;
 \\date\{.*\} ;
 \\maketitle ;
 \\label\{.*\} ;
+\\LaTeX ;
+\%.* ;
 \\begin\{document\} ;
 \\end\{document\} ;
 
@@ -58,12 +61,13 @@ int tabs = 0;
                             fprintf(out, "_%s_", text);
                         }
 
-\\begin\{verbatim\}     {   
+\\begin\{verbatim\}     {   fprintf(out, "\n");
                             tabs++;
                         }
 
 \\end\{verbatim\}       {   
                             tabs--;
+                            fprintf(out, "\n");
                         }
 
 \\begin\{quotation\}               {    fprintf(out, "\n> ");
@@ -74,26 +78,45 @@ int tabs = 0;
                                         BEGIN(INITIAL); 
                                    }
 
-\\begin\{itemize\}                 {    
+
+\\begin\{enumerate\}               {    tabs++;
+                                        BEGIN(ENUMERATE); 
+                                   }
+
+<ENUMERATE>\\item                 {
+                                        fprintf(out, "1.");
+                                  }
+
+<ENUMERATE>\\end\{enumerate\}      {    tabs--;
+                                        if(tabs == 0)
+                                            BEGIN(INITIAL);
+                                   }
+
+
+\\begin\{itemize\}                 {    tabs++;
+                                        printf("%d", tabs);
                                         BEGIN(ITEMIZE); 
                                    }
 
-<ITEMIZE>\\item                 {    fprintf(out, "\n\t -");
-                                     // fprintf(out, "%s\n", yytext + 5);
+<ITEMIZE>\\item                 {       
+                                        fprintf(out, "-");
                                 }
 
 
-<ITEMIZE>\\end\{itemize\}          {    
-                                        BEGIN(INITIAL); 
+<ITEMIZE>\\end\{itemize\}          {    tabs--;
+                                        if(tabs == 0)
+                                            BEGIN(INITIAL); 
                                    }
 
-[\n]         {   
-                fprintf(out, "\n"); 
+[\n]         {  if(tabs > 0)
+                    fprintf(out, "\n");
+                // fprintf(out, "%d", tabs); 
                 for(int i = 0; i < tabs; i++)
                     fprintf(out, "\t");
-            }
+             }
 
-.             { fprintf(out, "%s", yytext); }
+.             { 
+                fprintf(out, "%s", yytext); }
 %%
 
 int main(int argc, char **argv) {
