@@ -1,45 +1,28 @@
-Conversie
+How to Structure a LaTeX Document -- from https://en.wikibooks.org/wiki/LaTeX/simple.tex
 ===========
-Descrierea problemei
+     In this article, I shall discuss some of the fundamental topics inproducing a structured document.  This document itself does not go intomuch depth, but is instead the output of an example of how to implementstructure. Its {} source, when in used with [http://www.comp.leeds.ac.uk/andyr/misc/latex/latextutorial2.html](my tutorial)provides all the relevant information.  Introduction
 -----------
-Se dă un fișier  care trebuie transformat în fișier Markdown [https://en.wikipedia.org/wiki/Markdown](Markdown), după regulile prezentate mai jos.Code test `here`.
-
-	for i:=maxint to 0 do
-	begin
-	{ do nothing }
-	end;
-	Write('Case insensitive ');
-	Write('Pascal keywords.');
+This small document is designed to illustrate how easy it is to create awell structured document within .  You should quickly be able tosee how the article looks very professional, despite the content beingfar from academic.  Titles, section headings, justified text, textformatting etc., is all there, and you would be surprised when you seejust how little markup was required to get this output.Structure
+-----------
+One of the great advantages of {} is that all it needs to know isthe structure of a document, and then it will take care of the layoutand presentation itself.  So, here we shall begin looking at how exactlyyou tell {} what it needs to know about your document.\subsection{Top Matter}The first thing you normally have is a title of the document, as well asinformation about the author and date of publication.  In {} terms,this is all generally referred to as _top matter_.\subsubsection{Article Information}
+	- `title` _title_ - The title of the article.
+	- `date` - The date. Use:
 	
-**Atenție!** Există numeroase arome (_flavors_) de markdown. Vom utiliza în mod **exclusiv** specificațiile din specificația originală de markdown, chiar dacă nu vom utiliza _toate_ aceste specificații.Se vor transforma următoarele elemente: 
-	- titlul documentului -- argument al comenzii `title` -- se convertește în titlu Markdown cu subliniere dublă (se vor folosi 10 simboluri `=` indiferent de lungimea titlului)
-	- orice titlu de secțiune -- argument al unei comenzi de forma `*section` -- se convertește în titlu Markdown cu subliniere simplă (se vor folosi 10 simboluri `-` indiferent de lungimea titlului)
-	- comanda `quotation` se onvertește la un _blockquote_. În formatul `.md` se vor pune maxim 10 cuvinte pe linie.
-	- comenzile 
-		- `textbf`,
-		- `textit`,
-		- `emph`,
-		- `texttt`
+		- `date today` - to get the
+		date that the document is typeset.
+		- `date date` - for a  
+		specific date.
 		
-	se vor converti, respectiv, la formatări de tip 
-	
-		- _bold_, 
-		- _emphasis_, 
-		- _emphasis_ 
-		- și cod.
 		
-	
-	- conținutul dintr-un mediu `verbatim` se convertește într-un bloc de cod. 
-	- comentariile  nu vor apărea la ieșire.
-	- pentru orice alt mediu, la fel ca și pentru orice bloc, directivele de început și de sfârșit vor fi ignorate și conținutul lor se va afișa, prelucrat conform regulilor enunșate.
-	1. One
-	
-		1. Two
-		1. Three
-		1. Stay with me
-		
-	1. Four
-	1. Five Six Seven Ate Nine
-	
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse id sem consectetuer libero luctus adipiscing.
-Cam atât.
+	\subsubsection{Author Information}The basic article class only provides the one command:
+	- `author` - The author of the document.
+	It is common to not only include the author name, but to insert newlines after and add things suchas address and email details.  For a slightly more logical approach, usethe AMS article class (`amsart`) and you have the following extracommands:
+	- `address` - The author's address.  Use
+	the new line command for
+	line breaks.
+	- `thanks` - Where you put any acknowledgments.
+	- `email` - The author's email address.
+	- `urladdr` - The URL for the author's web page.
+	\subsection{Sectioning Commands}The commands for inserting sections are fairly intuitive.  Of course,certain commands are appropriate to different document classes.For example, a book has chapters but a article doesn't.\begin{center}\begin{tabular}{| l | l |} \hline  Command & Level \\ \hline                                     `part` _part_ & -1 \\`chapter` _chapter_ & 0 \\`section` _section_ & 1 \\`subsection` _subsection_ & 2 \\\hline\end{tabular}\end{center}Numbering of the sections is performed automatically by {}, so don'tbother adding them explicitly, just insert the heading you want betweenthe curly braces.  If you don't want sections number, then add an asterisk (*) after thesection command, but before the first curly brace, e.g., _A Title Without Numbers_.
+> Leslie LamportLaTeX: A Document Preparation System.  Addison Wesley, Massachusetts,  2nd Edition,  1994.
+   

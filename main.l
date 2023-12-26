@@ -17,8 +17,10 @@ int level = 0;
 \\date\{.*\} ;
 \\maketitle ;
 \\label\{.*\} ;
+\\LaTeX\\cite\{[^\}]+\} ;
 \\LaTeX ;
 \%.* ;
+\\author\{([^}]|\n)+\} ;
 \\begin\{document\} ;
 \\end\{document\} ;
 
@@ -60,6 +62,10 @@ int level = 0;
                             text[strlen(text) - 1] = '\0';
                             fprintf(out, "_%s_", text);
                         }
+
+\\begin\{abstract\}     {}
+
+\\end\{abstract\}       {}
 
 \\begin\{verbatim\}     {   fprintf(out, "\n");
                             tabs++;
