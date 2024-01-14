@@ -28,7 +28,7 @@ Pentru alimente:
 Lucruri de facut pe saptamana viitoare
 ----------
     1. Luni
-      1. Tuns `maine`
+      1. Tuns `parul`
       1. Spalat rufe
       1. Scos la plimbare cainele
     1. Marti
@@ -40,6 +40,4 @@ Lucruri de facut pe saptamana viitoare
 Un link pentru programarea la doctor: [https://www.google.com/doctor](doctor)
 Un link pentru programarea la tuns: [https://www.google.com/tuns](tuns)
 Link cu catalog de produse la reducerere: [https://www.google.com/reduceri](reduceri)
-
-
 

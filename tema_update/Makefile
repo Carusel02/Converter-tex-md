@@ -1,17 +1,13 @@
-CC = cc
+CC = gcc
 FLEX = flex
 
-TARGET = main
-SOURCE = main.l
-OBJECT = lex.yy.c
+all: main
 
-all: $(TARGET)
+main: lex.yy.c
+	$(CC) lex.yy.c -o main -lfl
 
-$(TARGET): $(OBJECT)
-	$(CC) $^ -o $@ -ll
-
-$(OBJECT): $(SOURCE)
-	$(FLEX) $<
+lex.yy.c: main.l
+	$(FLEX) main.l
 
 clean:
-	rm -f $(TARGET) $(OBJECT)
+	rm -f main lex.yy.c

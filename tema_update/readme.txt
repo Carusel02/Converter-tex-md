@@ -10,9 +10,9 @@ Probleme aparute:
     - ideea mea de baza sta la printarea fisierului in mod
     normal si transformarea anumitor sintaxe din el (astfel,
     se afiseaza tot si ce este afisat se modifica)
-- indentarea si spatiere si noi randuri de linie
-    - gestionarea acestora mi s-a parut foarte dificila, ca
-    sa arata cat de cat ok am incercat in reguli sa fac match
+- indentarea, spatierea si noi randuri de linie
+    - gestionarea acestora mi s-a parut foarte dificila
+    -ca sa arate ok, am incercat in reguli sa fac match
     si cu whitespaces
 
 Implementare:
