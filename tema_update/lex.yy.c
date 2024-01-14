@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 48
-#define YY_END_OF_BUFFER 49
+#define YY_NUM_RULES 49
+#define YY_END_OF_BUFFER 50
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -364,19 +364,19 @@ static const flex_int16_t yy_accept[1704] =
     {   0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       49,   45,   45,   46,   45,   45,   45,   45,   45,   45,
-       33,   45,   45,   45,   45,   45,   45,   45,   45,   45,
-       31,   30,   30,   30,   31,   45,   47,    0,    0,   44,
+       50,   46,   46,   47,   46,   46,   46,   46,   46,   46,
+       34,   46,   46,   46,   46,   46,   46,   46,   46,   46,
+       32,   31,   31,   31,   32,   46,   48,    0,    0,   45,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   40,    0,   43,    0,   36,    0,
-       37,    0,    0,    0,   47,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,   41,    0,   44,    0,   37,    0,
+       38,    0,    0,    0,   48,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,   47,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,   48,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   31,   30,   30,   31,    0,    0,
+        0,    0,    0,    0,   32,   31,   31,   32,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,   39,   42,    0,    0,
+        0,    0,    0,    0,    0,    0,   40,   43,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -389,20 +389,20 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,   35,    0,    0,    0,    0,    0,    0,    0,
+        0,    0,   36,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,   35,   23,    0,    0,    0,    0,    0,
+        0,    0,    0,   36,   24,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   35,   26,    0,    0,    0,    0,
+        0,    0,    0,    0,   36,   27,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    7,    0,    0,    0,    0,
         0,    0,    0,    0,    0,   17,    5,    0,    0,    0,
-        0,    0,    0,   41,    0,    0,   23,    0,    0,   23,
+        0,    0,    0,   42,    0,    0,   24,    0,    0,   24,
         7,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,   17,    5,    0,    0,    0,    0,    0,    0,   41,
-        0,   26,    0,    0,   26,    7,    0,    0,    0,    0,
+        0,   17,    5,    0,    0,    0,    0,    0,    0,   42,
+        0,   27,    0,    0,   27,    7,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,   17,    5,    0,    0,
-        0,    0,    0,    0,   41,    0,    0,    0,    7,    0,
+        0,    0,    0,    0,   42,    0,    0,    0,    7,    0,
         0,    0,    0,    0,    6,    0,    0,    0,    0,   21,
         0,    0,    0,    0,   17,    5,    0,    0,    0,    0,
 
@@ -414,16 +414,16 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    6,    0,    6,    0,   21,    0,    0,    0,
-        0,    0,    0,    0,    0,    5,    0,    0,   38,    0,
+        0,    0,    0,    0,    0,    5,    0,    0,   39,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    0,    6,    0,    0,    0,
         0,   21,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    5,    0,    0,   38,    0,    0,    0,
+        0,    0,    0,    5,    0,    0,   39,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    6,    0,    0,    0,    0,   21,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        5,    0,    0,   38,    0,    0,    0,    0,    0,    0,
+        5,    0,    0,   39,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    8,    0,    0,    0,    0,    0,
         0,    0,    0,    6,    0,    0,    0,    0,    0,    0,
         0,    5,    0,    0,    0,    0,    0,    0,   19,    0,
@@ -457,99 +457,99 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    4,    0,    3,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   23,
-        0,    0,    0,   23,    0,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   24,
+        0,    0,    0,   24,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    3,    0,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       26,    0,    0,    0,   26,    0,    0,    0,    0,    0,
+       27,    0,    0,    0,   27,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    3,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,   14,    0,    0,    0,    0,    0,    0,    4,
         3,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,   23,    0,    0,   23,    0,    0,   14,    0,
+        0,    0,   24,    0,    0,   24,    0,    0,   14,    0,
 
-        0,    0,    0,   23,    0,    0,    0,    0,    0,    4,
+        0,    0,    0,   24,    0,    0,    0,    0,    0,    4,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,   26,    0,    0,   26,
-        0,    0,   14,    0,    0,    0,    0,   26,    0,    0,
+        0,    0,    0,    0,    0,    0,   27,    0,    0,   27,
+        0,    0,   14,    0,    0,    0,    0,   27,    0,    0,
         0,    0,    0,    4,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   38,    0,
-       38,    0,   14,    0,   16,    0,    4,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
+       39,    0,   14,    0,   16,    0,    4,    0,    0,    0,
         0,    3,    0,    0,    0,    0,    0,    0,    0,    0,
 
-        0,    0,    2,    0,    0,    0,    0,    0,   23,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   38,    0,
-       38,    0,    0,   24,   16,   23,    0,    0,    4,    0,
-        0,    0,    0,    0,    0,    3,    0,   23,    0,    0,
-       23,    0,    0,   23,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    2,    0,    0,    0,    0,   26,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   38,
-        0,   38,    0,    0,    0,   16,   26,    0,    0,    4,
-        0,    0,    0,    0,    0,    0,    3,    0,   26,    0,
-        0,   26,    0,    0,   26,    0,    0,    0,    0,    0,
+        0,    0,    2,    0,    0,    0,    0,    0,   24,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
+       39,    0,    0,   25,   16,   24,    0,    0,    4,    0,
+        0,    0,    0,    0,    0,    3,    0,   24,    0,    0,
+       24,    0,    0,   24,    0,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    2,    0,    0,    0,    0,   27,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   39,
+        0,   39,    0,    0,    0,   16,   27,    0,    0,    4,
+        0,    0,    0,    0,    0,    0,    3,    0,   27,    0,
+        0,   27,    0,    0,   27,    0,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    2,    0,    0,    0,    0,
         0,   13,    0,    0,    0,    0,    0,    0,    0,   12,
-       10,   16,   38,    4,    0,    0,    3,    0,    0,    0,
-        0,    0,    0,    2,    0,    2,   34,    0,    0,   24,
-       23,    0,    0,   13,    0,    0,    0,    0,    0,    0,
-        0,   12,   10,   24,   38,    0,    0,    0,    0,    0,
-        3,    0,    0,   23,    0,   23,    0,   23,    0,    0,
+       10,   16,   39,    4,    0,    0,    3,    0,    0,    0,
+        0,    0,    0,    2,    0,    2,   35,    0,    0,   25,
+       24,    0,    0,   13,    0,    0,    0,    0,    0,    0,
+        0,   12,   10,   25,   39,    0,    0,    0,    0,    0,
+        3,    0,    0,   24,    0,   24,    0,   24,    0,    0,
         0,    0,    0,    0,    2,    0,    0,    0,    0,    0,
-       26,    0,    0,   13,    0,    0,    0,    0,    0,    0,
-        0,   12,   10,    0,   38,    0,    0,    0,    0,    0,
+       27,    0,    0,   13,    0,    0,    0,    0,    0,    0,
+        0,   12,   10,    0,   39,    0,    0,    0,    0,    0,
 
-        3,    0,    0,   26,    0,   26,    0,   26,    0,    0,
+        3,    0,    0,   27,    0,   27,    0,   27,    0,    0,
         0,    0,    0,    0,    2,    0,    0,    0,    0,    0,
-       38,    0,   13,    0,    0,   22,    0,   15,    0,    0,
-        0,   12,   10,    0,    3,    0,    0,   38,   38,   38,
-        0,    0,    2,    0,   34,    0,    0,   24,   38,    0,
-        0,    0,   22,    0,   15,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,   38,   38,   38,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   38,    0,
-        0,    0,   22,    0,   15,    0,    0,    0,   27,    0,
-        0,    0,    0,    0,    0,    0,   38,   38,   38,    0,
+       39,    0,   13,    0,    0,   23,    0,   15,    0,    0,
+        0,   12,   10,    0,    3,    0,    0,   39,   39,   39,
+        0,    0,    2,    0,   35,    0,    0,   25,   39,    0,
+        0,    0,   23,    0,   15,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,   39,   39,   39,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
+        0,    0,   23,    0,   15,    0,    0,    0,   28,    0,
+        0,    0,    0,    0,    0,    0,   39,   39,   39,    0,
 
-        0,    0,    0,    0,    0,    0,   29,    0,   22,   11,
-        9,    0,   22,    0,    0,   32,    0,    0,    0,    0,
-        0,    0,    0,    1,    0,    0,    0,    0,    0,   22,
-       11,    9,    0,    0,    0,   32,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    1,    0,   23,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   22,
-       27,   11,    9,    0,    0,    0,   32,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    1,   27,    0,   26,
+        0,    0,    0,    0,    0,    0,   30,    0,   23,   11,
+        9,    0,   22,    0,    0,   33,    0,    0,    0,    0,
+        0,    0,    0,    1,    0,    0,    0,    0,    0,   23,
+       11,    9,    0,    0,    0,   33,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,    1,    0,   24,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   23,
+       28,   11,    9,    0,    0,    0,   33,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    1,   28,    0,   27,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       29,    0,   22,   11,    9,   25,   28,    0,    0,    0,
+       30,    0,   22,   11,    9,   26,   29,    0,    0,    0,
 
        15,    0,    0,    1,    0,    1,    0,    0,    0,    0,
-        0,   25,   28,    0,    0,    0,    0,   15,    0,    0,
-        0,    0,    0,    1,    0,    0,   23,    0,    0,   23,
-        0,    0,   23,    0,    0,   23,    0,    0,   27,   25,
-       28,    0,    0,    0,    0,   15,    0,    0,    0,    0,
-        0,    1,    0,    0,   26,    0,    0,   26,    0,    0,
-       26,    0,    0,   26,    0,   25,   25,   28,   15,    0,
-        0,    0,    1,    0,   38,    0,    0,    0,   25,    0,
+        0,   26,   29,    0,    0,    0,    0,   15,    0,    0,
+        0,    0,    0,    1,    0,    0,   24,    0,    0,   24,
+        0,    0,   24,    0,    0,   24,    0,    0,   28,   26,
+       29,    0,    0,    0,    0,   15,    0,    0,    0,    0,
+        0,    1,    0,    0,   27,    0,    0,   27,    0,    0,
+       27,    0,    0,   27,    0,   26,   26,   29,   15,    0,
+        0,    0,    1,    0,   39,    0,    0,    0,   26,    0,
        15,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       38,   23,    0,   23,    0,   23,    0,   25,    0,   15,
+       39,   24,    0,   24,    0,   24,    0,   26,    0,   15,
 
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   38,
-       26,    0,   26,    0,   26,    0,   25,    0,    0,    0,
-        0,   38,   38,   38,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   38,   38,   38,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,   38,   38,   38,
-        0,    0,    0,    0,    0,    0,    0,   23,    0,    0,
-       23,    0,    0,    0,    0,    0,   26,    0,    0,   26,
-        0,    0,    0,    0,    0,   23,    0,   23,    0,   23,
-        0,    0,   26,    0,   26,    0,   26,    0,    0,   38,
-       38,   23,    0,   38,   38,   26,    0,   38,   38,   38,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   39,
+       27,    0,   27,    0,   27,    0,   26,    0,    0,    0,
+        0,   39,   39,   39,    0,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,   39,   39,   39,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,   39,   39,   39,
+        0,    0,    0,    0,    0,    0,    0,   24,    0,    0,
+       24,    0,    0,    0,    0,    0,   27,    0,    0,   27,
+        0,    0,    0,    0,    0,   24,    0,   24,    0,   24,
+        0,    0,   27,    0,   27,    0,   27,    0,    0,   39,
+       39,   24,    0,   39,   39,   27,    0,   39,   39,   39,
 
-       38,   38,    0
+       39,   39,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -3618,12 +3618,15 @@ char *yytext;
 #line 2 "main.l"
 #include <stdio.h>
 #include <stdlib.h>
+// output file
 FILE *out;
+// for quotation mode
 int quotation_word_count = 0;
+// for indentation
 int tabs = 0;
-#line 3625 "lex.yy.c"
+#line 3628 "lex.yy.c"
 
-#line 3627 "lex.yy.c"
+#line 3630 "lex.yy.c"
 
 #define INITIAL 0
 #define UNDERLINE_SECTION 1
@@ -3859,10 +3862,10 @@ YY_DECL
 		}
 
 	{
-#line 21 "main.l"
+#line 23 "main.l"
 
 
-#line 3866 "lex.yy.c"
+#line 3869 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -3922,212 +3925,231 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 23 "main.l"
+#line 25 "main.l"
 
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 25 "main.l"
+#line 27 "main.l"
 
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 27 "main.l"
+#line 29 "main.l"
 
 	YY_BREAK
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 29 "main.l"
+#line 31 "main.l"
 
 	YY_BREAK
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 31 "main.l"
+#line 33 "main.l"
 
 	YY_BREAK
 case 6:
 /* rule 6 can match eol */
 YY_RULE_SETUP
-#line 33 "main.l"
+#line 35 "main.l"
 
 	YY_BREAK
 case 7:
 /* rule 7 can match eol */
 YY_RULE_SETUP
-#line 35 "main.l"
+#line 37 "main.l"
 
 	YY_BREAK
 case 8:
 /* rule 8 can match eol */
 YY_RULE_SETUP
-#line 37 "main.l"
+#line 39 "main.l"
 
 	YY_BREAK
 case 9:
 /* rule 9 can match eol */
 YY_RULE_SETUP
-#line 39 "main.l"
+#line 41 "main.l"
 
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 40 "main.l"
+#line 42 "main.l"
 
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 42 "main.l"
+#line 44 "main.l"
 
 	YY_BREAK
 case 12:
 /* rule 12 can match eol */
 YY_RULE_SETUP
-#line 43 "main.l"
+#line 45 "main.l"
 
 	YY_BREAK
 case 13:
 /* rule 13 can match eol */
 YY_RULE_SETUP
-#line 45 "main.l"
+#line 47 "main.l"
 
 	YY_BREAK
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 46 "main.l"
+#line 48 "main.l"
 
 	YY_BREAK
 case 15:
 /* rule 15 can match eol */
 YY_RULE_SETUP
-#line 48 "main.l"
+#line 50 "main.l"
 
 	YY_BREAK
 case 16:
 /* rule 16 can match eol */
 YY_RULE_SETUP
-#line 49 "main.l"
+#line 51 "main.l"
 
 	YY_BREAK
 case 17:
 /* rule 17 can match eol */
 YY_RULE_SETUP
-#line 51 "main.l"
+#line 53 "main.l"
 
 	YY_BREAK
 case 18:
 /* rule 18 can match eol */
 YY_RULE_SETUP
-#line 53 "main.l"
-{     char *text = yytext + 8;
+#line 55 "main.l"
+{     // extract text and put under `[text]`
+                        char *text = yytext + 8;
                         text[strlen(text) - 1] = '\0';
-                        fprintf(out, "`%s`", text); }
+                        fprintf(out, "`%s`", text);   }
 	YY_BREAK
 case 19:
 /* rule 19 can match eol */
 YY_RULE_SETUP
-#line 57 "main.l"
-{     char *text = yytext + 8;
+#line 60 "main.l"
+{     // extract text and put under **[text]**
+                        char *text = yytext + 8;
                         text[strlen(text) - 1] = '\0';
                         fprintf(out, "**%s**", text); }
 	YY_BREAK
 case 20:
 /* rule 20 can match eol */
 YY_RULE_SETUP
-#line 61 "main.l"
-{     char *text = yytext + 8;
+#line 65 "main.l"
+{     // extract text and put under _[text]_
+                        char *text = yytext + 8;
                         text[strlen(text) - 1] = '\0';
-                        fprintf(out, "_%s_", text); }
+                        fprintf(out, "_%s_", text);   }
 	YY_BREAK
 case 21:
 /* rule 21 can match eol */
 YY_RULE_SETUP
-#line 65 "main.l"
-{       char *text = yytext + 6;
+#line 70 "main.l"
+{     // extract text and put under _[text]_
+                        char *text = yytext + 6;
                         text[strlen(text) - 1] = '\0';
-                        fprintf(out, "_%s_", text); }
+                        fprintf(out, "_%s_", text);   }
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
 YY_RULE_SETUP
-#line 69 "main.l"
-{     tabs++;
-                                     fprintf(out, "\n");
-                                     yy_push_state(ITEMIZE); }
+#line 76 "main.l"
+{     
+    // increase number of tabs
+    tabs++;
+    // add ITEMIZE on stack
+    yy_push_state(ITEMIZE);    }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 75 "main.l"
-{  for(int i = 0; i < tabs; i++) {
-                            fprintf(out, "  ");
-                        }
-                        
-                        fprintf(out, "-"); }
+#line 82 "main.l"
+{     
+    // increase number of tabs
+    tabs++;
+    // print new line
+    fprintf(out, "\n");
+    // add ITEMIZE on stack
+    yy_push_state(ITEMIZE);    }
 	YY_BREAK
 case 24:
-/* rule 24 can match eol */
 YY_RULE_SETUP
-#line 81 "main.l"
-{  tabs--;
-                                         yy_pop_state(); }
+#line 90 "main.l"
+{  
+    // print tabs
+    for(int i = 0; i < tabs; i++) {
+        fprintf(out, "  ");
+    }
+    // print bullet               
+    fprintf(out, "-"); }
 	YY_BREAK
 case 25:
 /* rule 25 can match eol */
 YY_RULE_SETUP
-#line 85 "main.l"
+#line 98 "main.l"
+{  tabs--;
+                                         yy_pop_state(); }
+	YY_BREAK
+case 26:
+/* rule 26 can match eol */
+YY_RULE_SETUP
+#line 102 "main.l"
 {   tabs++;
                                      fprintf(out, "\n");
                                      yy_push_state(ENUMERATE); }
 	YY_BREAK
-case 26:
+case 27:
 YY_RULE_SETUP
-#line 89 "main.l"
+#line 106 "main.l"
 {  for(int i = 0; i < tabs; i++) {
                             fprintf(out, "  ");
                           }
                         
                             fprintf(out, "1."); }
 	YY_BREAK
-case 27:
-/* rule 27 can match eol */
+case 28:
+/* rule 28 can match eol */
 YY_RULE_SETUP
-#line 95 "main.l"
+#line 112 "main.l"
 { tabs--; 
                                             yy_pop_state();
 
                                         }
 	YY_BREAK
-case 28:
-/* rule 28 can match eol */
+case 29:
+/* rule 29 can match eol */
 YY_RULE_SETUP
-#line 101 "main.l"
+#line 118 "main.l"
 { 
                           BEGIN(QUOTATION);  
                         }
 	YY_BREAK
-case 29:
-/* rule 29 can match eol */
+case 30:
+/* rule 30 can match eol */
 YY_RULE_SETUP
-#line 106 "main.l"
+#line 123 "main.l"
 {
     BEGIN(INITIAL);
 }
 	YY_BREAK
-case 30:
-/* rule 30 can match eol */
+case 31:
+/* rule 31 can match eol */
 YY_RULE_SETUP
-#line 110 "main.l"
+#line 127 "main.l"
 
 	YY_BREAK
-case 31:
+case 32:
 YY_RULE_SETUP
-#line 112 "main.l"
+#line 129 "main.l"
 {
                             
                                 if (quotation_word_count == 0) {
@@ -4145,32 +4167,32 @@ YY_RULE_SETUP
 
                             }
 	YY_BREAK
-case 32:
-YY_RULE_SETUP
-#line 129 "main.l"
-{ BEGIN(VERBATIM); }
-	YY_BREAK
 case 33:
-/* rule 33 can match eol */
 YY_RULE_SETUP
-#line 131 "main.l"
-{ fprintf(out, "\n    "); }
+#line 146 "main.l"
+{ BEGIN(VERBATIM); }
 	YY_BREAK
 case 34:
 /* rule 34 can match eol */
 YY_RULE_SETUP
-#line 133 "main.l"
-{ BEGIN(INITIAL); }
+#line 148 "main.l"
+{ fprintf(out, "\n    "); }
 	YY_BREAK
 case 35:
+/* rule 35 can match eol */
 YY_RULE_SETUP
-#line 135 "main.l"
-{ BEGIN(HREF); }
+#line 150 "main.l"
+{ BEGIN(INITIAL); }
 	YY_BREAK
 case 36:
-/* rule 36 can match eol */
 YY_RULE_SETUP
-#line 137 "main.l"
+#line 152 "main.l"
+{ BEGIN(HREF); }
+	YY_BREAK
+case 37:
+/* rule 37 can match eol */
+YY_RULE_SETUP
+#line 154 "main.l"
 { 
                     char *text = yytext + 1;
                     text[strlen(text) - 1] = '\0';
@@ -4178,10 +4200,10 @@ YY_RULE_SETUP
                     BEGIN(HREF_EXTRACT);
                   }
 	YY_BREAK
-case 37:
-/* rule 37 can match eol */
+case 38:
+/* rule 38 can match eol */
 YY_RULE_SETUP
-#line 144 "main.l"
+#line 161 "main.l"
 { 
                             char *text = yytext + 1;
                             text[strlen(text) - 1] = '\0';
@@ -4189,16 +4211,16 @@ YY_RULE_SETUP
                             BEGIN(INITIAL);
                     }   
 	YY_BREAK
-case 38:
-/* rule 38 can match eol */
-YY_RULE_SETUP
-#line 152 "main.l"
-{ BEGIN(UNDERLINE_SECTION); }
-	YY_BREAK
 case 39:
 /* rule 39 can match eol */
 YY_RULE_SETUP
-#line 154 "main.l"
+#line 169 "main.l"
+{ BEGIN(UNDERLINE_SECTION); }
+	YY_BREAK
+case 40:
+/* rule 40 can match eol */
+YY_RULE_SETUP
+#line 171 "main.l"
 { 
                            char *text = yytext + 1;
                            text[strlen(text) - 2] = '\0';
@@ -4208,10 +4230,10 @@ YY_RULE_SETUP
                            BEGIN(INITIAL);
                          }
 	YY_BREAK
-case 40:
-/* rule 40 can match eol */
+case 41:
+/* rule 41 can match eol */
 YY_RULE_SETUP
-#line 163 "main.l"
+#line 180 "main.l"
 { 
                            char *text = yytext + 1;
                            text[strlen(text) - 1] = '\0';
@@ -4221,15 +4243,15 @@ YY_RULE_SETUP
                            BEGIN(INITIAL);
                          }
 	YY_BREAK
-case 41:
+case 42:
 YY_RULE_SETUP
-#line 172 "main.l"
+#line 189 "main.l"
 { BEGIN(UNDERLINE_TITLE); }
 	YY_BREAK
-case 42:
-/* rule 42 can match eol */
+case 43:
+/* rule 43 can match eol */
 YY_RULE_SETUP
-#line 174 "main.l"
+#line 191 "main.l"
 { 
                            char *text = yytext + 1;
                            text[strlen(text) - 1] = '\0';
@@ -4239,10 +4261,10 @@ YY_RULE_SETUP
                            BEGIN(INITIAL);
                          }
 	YY_BREAK
-case 43:
-/* rule 43 can match eol */
+case 44:
+/* rule 44 can match eol */
 YY_RULE_SETUP
-#line 183 "main.l"
+#line 200 "main.l"
 { 
                            char *text = yytext + 1;
                            text[strlen(text) - 1] = '\0';
@@ -4252,34 +4274,34 @@ YY_RULE_SETUP
                            BEGIN(INITIAL);
                          }
 	YY_BREAK
-case 44:
-/* rule 44 can match eol */
-YY_RULE_SETUP
-#line 195 "main.l"
-{ fprintf(out, "\n"); }
-	YY_BREAK
 case 45:
+/* rule 45 can match eol */
 YY_RULE_SETUP
-#line 196 "main.l"
-{ fprintf(out, "%s", yytext); }
+#line 212 "main.l"
+{ fprintf(out, "\n"); }
 	YY_BREAK
 case 46:
-/* rule 46 can match eol */
 YY_RULE_SETUP
-#line 197 "main.l"
-{ fprintf(out, "\n"); }
+#line 213 "main.l"
+{ fprintf(out, "%s", yytext); }
 	YY_BREAK
 case 47:
+/* rule 47 can match eol */
 YY_RULE_SETUP
-#line 198 "main.l"
-
+#line 214 "main.l"
+{ fprintf(out, "\n"); }
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 200 "main.l"
+#line 215 "main.l"
+
+	YY_BREAK
+case 49:
+YY_RULE_SETUP
+#line 217 "main.l"
 ECHO;
 	YY_BREAK
-#line 4283 "lex.yy.c"
+#line 4305 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(UNDERLINE_SECTION):
 case YY_STATE_EOF(UNDERLINE_TITLE):
@@ -5339,7 +5361,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 200 "main.l"
+#line 217 "main.l"
 
 
 int main(int argc, char **argv) {
