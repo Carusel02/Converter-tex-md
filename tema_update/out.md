@@ -1,53 +1,78 @@
-Descrierea problemei
+
+
+
+
+How to Structure a LaTeX Document -- from https://en.wikibooks.org/wiki/LaTeX/simple.tex
+==========
+ 
+In this article, I shall discuss some of the fundamental topics in
+producing a structured document.This document itself does not go into
+much depth, but is instead the output of an example of how to implement
+structure. Its {} source, when in used with [http://www.comp.leeds.ac.uk/andyr/misc/latex/latextutorial2.html](my tutorial)
+provides all the relevant information.Introduction
 ----------
+This small document is designed to illustrate how easy it is to create a
+well structured document within \cite{lamport94}.You should quickly be able to
+see how the article looks very professional, despite the content being
+far from academic.Titles, section headings, justified text, text
+formatting etc., is all there, and you would be surprised when you see
+just how little markup was required to get this output.
 
-Se dă un fișier  care trebuie transformat în fișier Markdown [https://en.wikipedia.org/wiki/Markdown](Markdown), după regulile prezentate mai jos.
+Structure
+----------
+One of the great advantages of {} is that all it needs to know is
+the structure of a document, and then it will take care of the layout
+and presentation itself.So, here we shall begin looking at how exactly
+you tell {} what it needs to know about your document.
 
-Code test `here`.
+Top Matter
+----------
+The first thing you normally have is a title of the document, as well as
+information about the author and date of publication.In {} terms,
+this is all generally referred to as _top matter_.
 
+Article Information
+----------
+  - `title` _title_ - The title of the article.
+  - `date` - The date. Use:
+    - `date today` - to get the
+date that the document is typeset.
+    - `date date` - for aspecific date.
 
-    for i:=maxint to 0 do
-    begin
-    { do nothing }
-    end;
-    Write('Case insensitive ');
-    Write('Pascal keywords.');
-    
+Author Information
+----------
+The basic article class only provides the one command:
+    - `author` - The author of the document.
 
-**Atenție!** Există numeroase arome (_flavors_) de markdown. Vom utiliza în mod **exclusiv** specificațiile din specificația originală de markdown, chiar dacă nu vom utiliza _toate_ aceste specificații.
+It is common to not only include the author name, but to insert new
+lines after and add things such
+as address and email details.For a slightly more logical approach, use
+the AMS article class (`amsart`) and you have the following extra
+commands:
+    - `address` - The author's address.Use
+	the new line command for
+	line breaks.
+    - `thanks` - Where you put any acknowledgments.
+    - `email` - The author's email address.
+    - `urladdr` - The URL for the author's web page.
+Sectioning Commands
+----------
+The commands for inserting sections are fairly intuitive.Of course,
+certain commands are appropriate to different document classes.
+For example, a book has chapters but a article doesn't.
 
-
-
-Se vor transforma următoarele elemente:
-  - titlul documentului -- argument al comenzii `title` -- se convertește în titlu Markdown cu subliniere dublă (se vor folosi 10 simboluri `=` indiferent de lungimea titlului)
-  - orice titlu de secțiune -- argument al unei comenzi de forma `*section` -- se convertește în titlu Markdown cu subliniere simplă (se vor folosi 10 simboluri `-` indiferent de lungimea titlului)
-  - comanda `quotation` se onvertește la un _blockquote_. În formatul `.md` se vor pune maxim 10 cuvinte pe linie.
-  - comenzile    - `textbf`,
-    - `textit`,
-    - `emph`,
-    - `texttt`
-se vor converti, respectiv, la formatări de tip 
-    - _bold_, 
-    - _emphasis_, 
-    - _emphasis_ 
-    - și cod.
+	 
+					
+Command & Level \\ `part` _part_ & -1 \\
+`chapter` _chapter_ & 0 \\
+`section` _section_ & 1 \\
+`subsection` _subsection_ & 2 \\
 	
-  - conținutul dintr-un mediu `verbatim` se convertește într-un bloc de cod. 
-  - comentariile  nu vor apărea la ieșire.
-  - pentru orice alt mediu, la fel ca și pentru orice bloc, directivele de început și de sfârșit vor fi ignorate și conținutul lor se va afișa, prelucrat conform regulilor enunșate.
+Numbering of the sections is performed automatically by {}, so don't
+bother adding them explicitly, just insert the heading you want between
+the curly braces.If you don't want sections number, then add an asterisk (*) after the
+section command, but before the first curly brace, e.g., _A Title Without Numbers_.
 
-  1. One
-
-    1. Two
-    1. Three
-    1. Stay with me
-  1. Four
-  1. Five Six Seven Ate Nine
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor
-> sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
-> Suspendisse id sem consectetuer libero luctus adipiscing. 
-Cam atât.
-
+> Leslie Lamport LaTeX: A Document Preparation System. Addison Wesley, Massachusetts,
+> 2nd Edition, 1994.  
+%End of document.

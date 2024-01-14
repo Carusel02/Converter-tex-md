@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 49
-#define YY_END_OF_BUFFER 50
+#define YY_NUM_RULES 50
+#define YY_END_OF_BUFFER 51
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -364,19 +364,19 @@ static const flex_int16_t yy_accept[1704] =
     {   0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       50,   46,   46,   47,   46,   46,   46,   46,   46,   46,
-       34,   46,   46,   46,   46,   46,   46,   46,   46,   46,
-       32,   31,   31,   31,   32,   46,   48,    0,    0,   45,
+       51,   47,   47,   48,   47,   47,   47,   47,   47,   47,
+       35,   47,   47,   47,   47,   47,   47,   47,   47,   47,
+       33,   32,   32,   32,   33,   47,   49,    0,    0,   46,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   41,    0,   44,    0,   37,    0,
-       38,    0,    0,    0,   48,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,   42,    0,   45,    0,   38,    0,
+       39,    0,    0,    0,   49,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,   48,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,   49,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   32,   31,   31,   32,    0,    0,
+        0,    0,    0,    0,   33,   32,   32,   33,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,   40,   43,    0,    0,
+        0,    0,    0,    0,    0,    0,   41,   44,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -389,20 +389,20 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,   36,    0,    0,    0,    0,    0,    0,    0,
+        0,    0,   37,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,   36,   24,    0,    0,    0,    0,    0,
+        0,    0,    0,   37,   24,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   36,   27,    0,    0,    0,    0,
+        0,    0,    0,    0,   37,   28,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    7,    0,    0,    0,    0,
         0,    0,    0,    0,    0,   17,    5,    0,    0,    0,
-        0,    0,    0,   42,    0,    0,   24,    0,    0,   24,
+        0,    0,    0,   43,    0,    0,   24,    0,    0,   24,
         7,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,   17,    5,    0,    0,    0,    0,    0,    0,   42,
-        0,   27,    0,    0,   27,    7,    0,    0,    0,    0,
+        0,   17,    5,    0,    0,    0,    0,    0,    0,   43,
+        0,   28,    0,    0,   28,    7,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,   17,    5,    0,    0,
-        0,    0,    0,    0,   42,    0,    0,    0,    7,    0,
+        0,    0,    0,    0,   43,    0,    0,    0,    7,    0,
         0,    0,    0,    0,    6,    0,    0,    0,    0,   21,
         0,    0,    0,    0,   17,    5,    0,    0,    0,    0,
 
@@ -414,16 +414,16 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    6,    0,    6,    0,   21,    0,    0,    0,
-        0,    0,    0,    0,    0,    5,    0,    0,   39,    0,
+        0,    0,    0,    0,    0,    5,    0,    0,   40,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    0,    6,    0,    0,    0,
         0,   21,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    5,    0,    0,   39,    0,    0,    0,
+        0,    0,    0,    5,    0,    0,   40,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    6,    0,    0,    0,    0,   21,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        5,    0,    0,   39,    0,    0,    0,    0,    0,    0,
+        5,    0,    0,   40,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    8,    0,    0,    0,    0,    0,
         0,    0,    0,    6,    0,    0,    0,    0,    0,    0,
         0,    5,    0,    0,    0,    0,    0,    0,   19,    0,
@@ -463,7 +463,7 @@ static const flex_int16_t yy_accept[1704] =
 
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       27,    0,    0,    0,   27,    0,    0,    0,    0,    0,
+       28,    0,    0,    0,   28,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    3,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
@@ -475,81 +475,81 @@ static const flex_int16_t yy_accept[1704] =
         0,    0,    0,   24,    0,    0,    0,    0,    0,    4,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,   27,    0,    0,   27,
-        0,    0,   14,    0,    0,    0,    0,   27,    0,    0,
+        0,    0,    0,    0,    0,    0,   28,    0,    0,   28,
+        0,    0,   14,    0,    0,    0,    0,   28,    0,    0,
         0,    0,    0,    4,    0,    0,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
-       39,    0,   14,    0,   16,    0,    4,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   40,    0,
+       40,    0,   14,    0,   16,    0,    4,    0,    0,    0,
         0,    3,    0,    0,    0,    0,    0,    0,    0,    0,
 
         0,    0,    2,    0,    0,    0,    0,    0,   24,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
-       39,    0,    0,   25,   16,   24,    0,    0,    4,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   40,    0,
+       40,    0,    0,   25,   16,   24,    0,    0,    4,    0,
         0,    0,    0,    0,    0,    3,    0,   24,    0,    0,
        24,    0,    0,   24,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    2,    0,    0,    0,    0,   27,
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   39,
-        0,   39,    0,    0,    0,   16,   27,    0,    0,    4,
-        0,    0,    0,    0,    0,    0,    3,    0,   27,    0,
-        0,   27,    0,    0,   27,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    2,    0,    0,    0,    0,   28,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   40,
+        0,   40,    0,    0,    0,   16,   28,    0,    0,    4,
+        0,    0,    0,    0,    0,    0,    3,    0,   28,    0,
+        0,   28,    0,    0,   28,    0,    0,    0,    0,    0,
 
         0,    0,    0,    0,    0,    2,    0,    0,    0,    0,
         0,   13,    0,    0,    0,    0,    0,    0,    0,   12,
-       10,   16,   39,    4,    0,    0,    3,    0,    0,    0,
-        0,    0,    0,    2,    0,    2,   35,    0,    0,   25,
+       10,   16,   40,    4,    0,    0,    3,    0,    0,    0,
+        0,    0,    0,    2,    0,    2,   36,    0,    0,   25,
        24,    0,    0,   13,    0,    0,    0,    0,    0,    0,
-        0,   12,   10,   25,   39,    0,    0,    0,    0,    0,
+        0,   12,   10,   25,   40,    0,    0,    0,    0,    0,
         3,    0,    0,   24,    0,   24,    0,   24,    0,    0,
         0,    0,    0,    0,    2,    0,    0,    0,    0,    0,
-       27,    0,    0,   13,    0,    0,    0,    0,    0,    0,
-        0,   12,   10,    0,   39,    0,    0,    0,    0,    0,
+       28,    0,    0,   13,    0,    0,    0,    0,    0,    0,
+        0,   12,   10,    0,   40,    0,    0,    0,    0,    0,
 
-        3,    0,    0,   27,    0,   27,    0,   27,    0,    0,
+        3,    0,    0,   28,    0,   28,    0,   28,    0,    0,
         0,    0,    0,    0,    2,    0,    0,    0,    0,    0,
-       39,    0,   13,    0,    0,   23,    0,   15,    0,    0,
-        0,   12,   10,    0,    3,    0,    0,   39,   39,   39,
-        0,    0,    2,    0,   35,    0,    0,   25,   39,    0,
+       40,    0,   13,    0,    0,   23,    0,   15,    0,    0,
+        0,   12,   10,    0,    3,    0,    0,   40,   40,   40,
+        0,    0,    2,    0,   36,    0,    0,   25,   40,    0,
         0,    0,   23,    0,   15,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,    0,   39,   39,   39,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,    0,   39,    0,
-        0,    0,   23,    0,   15,    0,    0,    0,   28,    0,
-        0,    0,    0,    0,    0,    0,   39,   39,   39,    0,
+        0,    0,    0,    0,    0,   40,   40,   40,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,    0,   40,    0,
+        0,    0,   23,    0,   15,    0,    0,    0,   29,    0,
+        0,    0,    0,    0,    0,    0,   40,   40,   40,    0,
 
-        0,    0,    0,    0,    0,    0,   30,    0,   23,   11,
-        9,    0,   22,    0,    0,   33,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,   31,    0,   23,   11,
+        9,    0,   22,    0,    0,   34,    0,    0,    0,    0,
         0,    0,    0,    1,    0,    0,    0,    0,    0,   23,
-       11,    9,    0,    0,    0,   33,    0,    0,    0,    0,
+       11,    9,    0,    0,    0,   34,    0,    0,    0,    0,
         0,    0,    0,    0,    0,    1,    0,   24,    0,    0,
         0,    0,    0,    0,    0,    0,    0,    0,    0,   23,
-       28,   11,    9,    0,    0,    0,   33,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    1,   28,    0,   27,
+       29,   11,    9,    0,    0,    0,   34,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    1,   29,    0,   28,
         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       30,    0,   22,   11,    9,   26,   29,    0,    0,    0,
+       31,    0,   22,   11,    9,   27,   30,    0,    0,    0,
 
        15,    0,    0,    1,    0,    1,    0,    0,    0,    0,
-        0,   26,   29,    0,    0,    0,    0,   15,    0,    0,
+        0,   27,   30,    0,    0,    0,    0,   15,    0,    0,
         0,    0,    0,    1,    0,    0,   24,    0,    0,   24,
-        0,    0,   24,    0,    0,   24,    0,    0,   28,   26,
-       29,    0,    0,    0,    0,   15,    0,    0,    0,    0,
-        0,    1,    0,    0,   27,    0,    0,   27,    0,    0,
-       27,    0,    0,   27,    0,   26,   26,   29,   15,    0,
-        0,    0,    1,    0,   39,    0,    0,    0,   26,    0,
+        0,    0,   24,    0,    0,   24,    0,    0,   29,   27,
+       30,    0,    0,    0,    0,   15,    0,    0,    0,    0,
+        0,    1,    0,    0,   28,    0,    0,   28,    0,    0,
+       28,    0,    0,   28,    0,   27,   26,   30,   15,    0,
+        0,    0,    1,    0,   40,    0,    0,    0,   27,    0,
        15,    0,    0,    0,    0,    0,    0,    0,    0,    0,
-       39,   24,    0,   24,    0,   24,    0,   26,    0,   15,
+       40,   24,    0,   24,    0,   24,    0,   27,    0,   15,
 
-        0,    0,    0,    0,    0,    0,    0,    0,    0,   39,
-       27,    0,   27,    0,   27,    0,   26,    0,    0,    0,
-        0,   39,   39,   39,    0,    0,    0,    0,    0,    0,
-        0,    0,    0,    0,   39,   39,   39,    0,    0,    0,
-        0,    0,    0,    0,    0,    0,    0,   39,   39,   39,
+        0,    0,    0,    0,    0,    0,    0,    0,    0,   40,
+       28,    0,   28,    0,   28,    0,   26,    0,    0,    0,
+        0,   40,   40,   40,    0,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,   40,   40,   40,    0,    0,    0,
+        0,    0,    0,    0,    0,    0,    0,   40,   40,   40,
         0,    0,    0,    0,    0,    0,    0,   24,    0,    0,
-       24,    0,    0,    0,    0,    0,   27,    0,    0,   27,
+       24,    0,    0,    0,    0,    0,   28,    0,    0,   28,
         0,    0,    0,    0,    0,   24,    0,   24,    0,   24,
-        0,    0,   27,    0,   27,    0,   27,    0,    0,   39,
-       39,   24,    0,   39,   39,   27,    0,   39,   39,   39,
+        0,    0,   28,    0,   28,    0,   28,    0,    0,   40,
+       40,   24,    0,   40,   40,   28,    0,   40,   40,   40,
 
-       39,   39,    0
+       40,   40,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -4096,212 +4096,232 @@ case 25:
 /* rule 25 can match eol */
 YY_RULE_SETUP
 #line 98 "main.l"
-{  tabs--;
-                                         yy_pop_state(); }
+{  
+    // decrease number of tabs
+    tabs--;
+    // remove ITEMIZE from stack
+    yy_pop_state(); }
 	YY_BREAK
 case 26:
 /* rule 26 can match eol */
 YY_RULE_SETUP
-#line 102 "main.l"
-{   tabs++;
-                                     fprintf(out, "\n");
-                                     yy_push_state(ENUMERATE); }
+#line 105 "main.l"
+{
+    // increase number of tabs
+    tabs++;
+    // add ENUMERATE on stack
+    yy_push_state(ENUMERATE); }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 106 "main.l"
-{  for(int i = 0; i < tabs; i++) {
-                            fprintf(out, "  ");
-                          }
-                        
-                            fprintf(out, "1."); }
+#line 111 "main.l"
+{
+    // increase number of tabs
+    tabs++;
+    // print new line
+    fprintf(out, "\n");
+    // add ENUMERATE on stack
+    yy_push_state(ENUMERATE); }
 	YY_BREAK
 case 28:
-/* rule 28 can match eol */
 YY_RULE_SETUP
-#line 112 "main.l"
-{ tabs--; 
-                                            yy_pop_state();
-
-                                        }
+#line 119 "main.l"
+{  
+    // print tabs
+    for(int i = 0; i < tabs; i++) {
+        fprintf(out, "  ");
+    }
+    // print bullet       
+    fprintf(out, "1."); }
 	YY_BREAK
 case 29:
 /* rule 29 can match eol */
 YY_RULE_SETUP
-#line 118 "main.l"
+#line 127 "main.l"
 { 
-                          BEGIN(QUOTATION);  
-                        }
+    // decrease number of tabs
+    tabs--; 
+    // remove ENUMERATE from stack
+    yy_pop_state(); }
 	YY_BREAK
 case 30:
 /* rule 30 can match eol */
 YY_RULE_SETUP
-#line 123 "main.l"
-{
-    BEGIN(INITIAL);
-}
+#line 133 "main.l"
+{   BEGIN(QUOTATION);   }
 	YY_BREAK
 case 31:
 /* rule 31 can match eol */
 YY_RULE_SETUP
-#line 127 "main.l"
-
+#line 135 "main.l"
+{   BEGIN(INITIAL);    }
 	YY_BREAK
 case 32:
+/* rule 32 can match eol */
 YY_RULE_SETUP
-#line 129 "main.l"
-{
-                            
-                                if (quotation_word_count == 0) {
-                                    fprintf(out, "> ");
-                                }
+#line 137 "main.l"
 
-                                quotation_word_count++;
-
-                                if(quotation_word_count == 10) {
-                                    fprintf(out, "%s\n", yytext);
-                                    quotation_word_count = 0;
-                                } else {
-                                    fprintf(out, "%s ", yytext);
-                                }
-
-                            }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 146 "main.l"
-{ BEGIN(VERBATIM); }
+#line 139 "main.l"
+{
+
+    // verify if it is the first word of the quotation                  
+    if (quotation_word_count == 0) {
+        fprintf(out, "> ");
+    }
+    // increase word count
+    quotation_word_count++;
+    // print word and verify if it is the last word of the quotation
+    if(quotation_word_count == 10) {
+        fprintf(out, "%s\n", yytext);
+        // reset word count
+        quotation_word_count = 0;
+    } else {
+        // print word
+        fprintf(out, "%s ", yytext);
+    }
+                            }
 	YY_BREAK
 case 34:
-/* rule 34 can match eol */
 YY_RULE_SETUP
-#line 148 "main.l"
-{ fprintf(out, "\n    "); }
+#line 158 "main.l"
+{   BEGIN(VERBATIM);   }
 	YY_BREAK
 case 35:
 /* rule 35 can match eol */
 YY_RULE_SETUP
-#line 150 "main.l"
-{ BEGIN(INITIAL); }
+#line 160 "main.l"
+{ 
+    // print indent with 4 spaces
+    fprintf(out, "\n    "); }
 	YY_BREAK
 case 36:
+/* rule 36 can match eol */
 YY_RULE_SETUP
-#line 152 "main.l"
-{ BEGIN(HREF); }
+#line 164 "main.l"
+{   BEGIN(INITIAL);   }
 	YY_BREAK
 case 37:
-/* rule 37 can match eol */
 YY_RULE_SETUP
-#line 154 "main.l"
-{ 
-                    char *text = yytext + 1;
-                    text[strlen(text) - 1] = '\0';
-                    fprintf(out, "[%s]", text);
-                    BEGIN(HREF_EXTRACT);
-                  }
+#line 166 "main.l"
+{   BEGIN(HREF);   }
 	YY_BREAK
 case 38:
 /* rule 38 can match eol */
 YY_RULE_SETUP
-#line 161 "main.l"
-{ 
-                            char *text = yytext + 1;
-                            text[strlen(text) - 1] = '\0';
-                            fprintf(out, "(%s)", text);
-                            BEGIN(INITIAL);
-                    }   
+#line 168 "main.l"
+{
+    // extract text and put under [text] 
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    fprintf(out, "[%s]", text);
+    BEGIN(HREF_EXTRACT); }
 	YY_BREAK
 case 39:
 /* rule 39 can match eol */
 YY_RULE_SETUP
-#line 169 "main.l"
-{ BEGIN(UNDERLINE_SECTION); }
+#line 175 "main.l"
+{
+    // extract text and put under (text)
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    fprintf(out, "(%s)", text);
+    BEGIN(INITIAL);        }   
 	YY_BREAK
 case 40:
 /* rule 40 can match eol */
 YY_RULE_SETUP
-#line 171 "main.l"
-{ 
-                           char *text = yytext + 1;
-                           text[strlen(text) - 2] = '\0';
-                           
-                           fprintf(out, "%s\n", text);
-                           fprintf(out, "----------\n");
-                           BEGIN(INITIAL);
-                         }
+#line 182 "main.l"
+{   BEGIN(UNDERLINE_SECTION);   }
 	YY_BREAK
 case 41:
 /* rule 41 can match eol */
 YY_RULE_SETUP
-#line 180 "main.l"
+#line 184 "main.l"
 { 
-                           char *text = yytext + 1;
-                           text[strlen(text) - 1] = '\0';
-                           
-                           fprintf(out, "%s\n", text);
-                           fprintf(out, "----------\n");
-                           BEGIN(INITIAL);
-                         }
+    // extract text and print underlined with '-'
+    char *text = yytext + 1;
+    text[strlen(text) - 2] = '\0';
+    
+    fprintf(out, "%s\n", text);
+    fprintf(out, "----------\n");
+    BEGIN(INITIAL); }
 	YY_BREAK
 case 42:
+/* rule 42 can match eol */
 YY_RULE_SETUP
-#line 189 "main.l"
-{ BEGIN(UNDERLINE_TITLE); }
+#line 193 "main.l"
+{
+    // extract text and print underlined with '-'
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    
+    fprintf(out, "%s\n", text);
+    fprintf(out, "----------\n");
+    BEGIN(INITIAL); }
 	YY_BREAK
 case 43:
-/* rule 43 can match eol */
 YY_RULE_SETUP
-#line 191 "main.l"
-{ 
-                           char *text = yytext + 1;
-                           text[strlen(text) - 1] = '\0';
-                           
-                           fprintf(out, "%s", text);
-                           fprintf(out, "==========\n");
-                           BEGIN(INITIAL);
-                         }
+#line 202 "main.l"
+{   BEGIN(UNDERLINE_TITLE);   }
 	YY_BREAK
 case 44:
 /* rule 44 can match eol */
 YY_RULE_SETUP
-#line 200 "main.l"
+#line 204 "main.l"
 { 
-                           char *text = yytext + 1;
-                           text[strlen(text) - 1] = '\0';
-                           
-                           fprintf(out, "%s\n", text);
-                           fprintf(out, "==========\n");
-                           BEGIN(INITIAL);
-                         }
+    // extract text and print underlined with '='
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    
+    fprintf(out, "%s", text);
+    fprintf(out, "==========\n");
+    BEGIN(INITIAL); }
 	YY_BREAK
 case 45:
 /* rule 45 can match eol */
 YY_RULE_SETUP
-#line 212 "main.l"
-{ fprintf(out, "\n"); }
+#line 213 "main.l"
+{
+    // extract text and print underlined with '='
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    
+    fprintf(out, "%s\n", text);
+    fprintf(out, "==========\n");
+    BEGIN(INITIAL);
+                         }
 	YY_BREAK
 case 46:
+/* rule 46 can match eol */
 YY_RULE_SETUP
-#line 213 "main.l"
-{ fprintf(out, "%s", yytext); }
+#line 223 "main.l"
+
 	YY_BREAK
 case 47:
-/* rule 47 can match eol */
 YY_RULE_SETUP
-#line 214 "main.l"
-{ fprintf(out, "\n"); }
+#line 224 "main.l"
+{ fprintf(out, "%s", yytext); }
 	YY_BREAK
 case 48:
+/* rule 48 can match eol */
 YY_RULE_SETUP
-#line 215 "main.l"
-
+#line 225 "main.l"
+{ fprintf(out, "\n"); }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 217 "main.l"
+#line 226 "main.l"
+
+	YY_BREAK
+case 50:
+YY_RULE_SETUP
+#line 228 "main.l"
 ECHO;
 	YY_BREAK
-#line 4305 "lex.yy.c"
+#line 4325 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(UNDERLINE_SECTION):
 case YY_STATE_EOF(UNDERLINE_TITLE):
@@ -5361,25 +5381,31 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 217 "main.l"
+#line 228 "main.l"
 
 
 int main(int argc, char **argv) {
 
+    // open input file
     yyin = fopen(argv[1], "r");
+    // verify for errors
     if (yyin == NULL) {
         printf("Error opening file %s\n", argv[1]);
         return 1;
     }
 
+    // open output file
     out = fopen("out.md", "w");
+    // verify for errors
     if (out == NULL) {
         printf("Error opening file out.txt\n");
         return 1;
     }
 
+    // start analysis
     yylex();
 
+    // close files
     fclose(yyin);
     fclose(out);
 

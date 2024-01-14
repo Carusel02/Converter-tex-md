@@ -220,7 +220,7 @@ int tabs = 0;
     BEGIN(INITIAL);
                          }
 
-%.*\n   { fprintf(out, "\n"); }
+%.*\n  
 .       { fprintf(out, "%s", yytext); }
 \n      { fprintf(out, "\n"); }
 [ \t]+
