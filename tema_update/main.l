@@ -1,4 +1,5 @@
 %{
+// MARIN MARIUS DANIEL 332CC
 #include <stdio.h>
 #include <stdlib.h>
 // output file
@@ -72,6 +73,25 @@ int tabs = 0;
                         text[strlen(text) - 1] = '\0';
                         fprintf(out, "_%s_", text);   }
 
+\\title {   BEGIN(UNDERLINE_TITLE);   }
+
+<UNDERLINE_TITLE>\{([^}]*)\}\n { 
+    // extract text and print underlined with '='
+    char *text = yytext + 1;
+    text[strlen(text) - 2] = '\0';
+    
+    fprintf(out, "%s\n", text);
+    fprintf(out, "==========\n");
+    BEGIN(INITIAL); }
+
+<UNDERLINE_TITLE>\{[^}]*\} {
+    // extract text and print underlined with '='
+    char *text = yytext + 1;
+    text[strlen(text) - 1] = '\0';
+    
+    fprintf(out, "%s\n", text);
+    fprintf(out, "==========\n");
+    BEGIN(INITIAL); }
 
 ([ \t]*)?\\begin\{itemize\}\n {     
     // increase number of tabs
@@ -199,26 +219,7 @@ int tabs = 0;
     fprintf(out, "----------\n");
     BEGIN(INITIAL); }
 
-\\title {   BEGIN(UNDERLINE_TITLE);   }
 
-<UNDERLINE_TITLE>\{([^}]*)\}\n { 
-    // extract text and print underlined with '='
-    char *text = yytext + 1;
-    text[strlen(text) - 1] = '\0';
-    
-    fprintf(out, "%s", text);
-    fprintf(out, "==========\n");
-    BEGIN(INITIAL); }
-
-<UNDERLINE_TITLE>\{([^}]*)\} {
-    // extract text and print underlined with '='
-    char *text = yytext + 1;
-    text[strlen(text) - 1] = '\0';
-    
-    fprintf(out, "%s\n", text);
-    fprintf(out, "==========\n");
-    BEGIN(INITIAL);
-                         }
 
 %.*\n  
 .       { fprintf(out, "%s", yytext); }
