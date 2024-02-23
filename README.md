@@ -1,5 +1,5 @@
-##### MARIN MARIUS DANIEL 332CC
 ## Tema FLEX Varianta A
+##### MARIN MARIUS DANIEL 332CC
 
 ### Probleme aparute:
 - diversitatea in care pot veni comenzile:
